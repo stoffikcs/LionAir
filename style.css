@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Noto+Sans:ital@0;1&display=swap');
+
+/*  
+font-family: "Noto Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
+*/
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-family:"Noto Sans", sans-serif;
+    margin: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2{
+    font-size: 50px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+a:active{
+    opacity: 1;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container--small {
+    max-width: 1000px;
+}
+
+button, a, input{
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+/*___________header__________*/
+
+.header{
+    position: relative;
+    z-index: 1;
+}
+
+.header_container{
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo_air{
+    width: 380px;
+}
+
+.icon{
+    height: 35px;
+    width: 35px;
+}
+
+.header_login{
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    gap: 5px;
+    text-decoration: underline;
+}
+
+/*___________main___________*/
+
+.welcome{
+    margin-top: -10px;
+    padding-bottom: 50px;
+}
+
+.welcome__container::after{
+    content: "";
+
+    position: absolute;
+    width: 345px;
+    height: 290px;
+    right: 50px;
+    top: 70px;
+    background: #772626;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.welcome__container::before{
+    content: "";
+
+    position: absolute;
+    width: 260px;
+    height: 160px;
+    right: 380px;
+    top: 670px;
+    background: #772626;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.welcome__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome__title{
+    margin-bottom: 110px;
+    font-size: 64px;
+    line-height: 1.09;
+}
+
+.welcome__text{
+    position: relative;
+    font-size: 21px;
+    padding-left: 130px;
+}
+
+.welcome__text::before{
+    content:"";
+
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    left: 15px;
+    top: -80px;
+    background: #772626;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.welcome__text::after{
+    content: "";
+
+    width: 135px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    transform: rotate(120deg);
+    z-index: -1;
+}
+
+.welcome__img{
+    width: 320px;
+    padding-left: 60px;
+    padding-right: 12px;
+}
+
+.welcome__cta{
+    padding-top: 70px;
+}
+
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta__text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700px;
+    font-size: 35px;
+}
+
+.cta__img{
+    height: 50px;
+}
+
+.sta__links{
+    display: flex;
+    gap: 30px;
+}
+
+/*________________mission__________________*/
+
+
+.mission{
+    padding: 150px 0;
+}
+
+.mission__container{
+    position: relative;
+}
+
+.mission__img{
+    position: absolute;
+    transform: rotate(90deg) translate(-70%);
+    top: 0;
+    right: 65%;
+    width: 490px;
+    z-index: -1;
+}
+
+.mission__title{
+    position: relative;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.mission__title::after{
+    content: "";
+    position: absolute;
+    right: 170px;
+    top: 0;
+
+
+    width: 110px;
+    height: 110px;
+
+    background: #772626;
+    opacity: 1;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.mission__desc{
+    max-width:330px;
+    margin-left: auto;
+}
+
+/*___________________common________________*/
+
+.common{
+    margin-top: 80px;
+    padding: 50px 0;
+}
+
+.flot {
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0)56%, #000 84%), url("./img/fon1.jpg");
+    background-size: cover;
+}
+
+.mar {
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0)56%, #000 84%), url("./img/fon4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.common__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.common__img{
+    width: 320px;
+}
+
+.common__col{
+    max-width: 410px;
+}
+
+.common__title{
+    margin-bottom: 20px;
+}
+
+.common:nth-child(even) .container{
+    flex-direction: row-reverse;
+}
+
+/*______________footer_______________*/
+
+.footer{
+    overflow: hidden;
+}
+
+.footer__cta .cta__text{
+    font-size: 24px;
+}
+
+.footer__container{
+    position: relative;
+}
+
+.footer__container::before{
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+    left: -30;
+    bottom: -110px;
+    background: #772626;
+    filter: blur(50px);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.footer__cta .cta__img{
+    width: 260px;
+    height: 75px;
+}
+
+.footer__cta{
+    margin-bottom: 50px;
+    margin-top: 70px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__cta .cta__link{
+    gap: 60px;
+}
+
+.footer__row{
+    margin-bottom: 35px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo{
+    width: 150px;
+}
+
+.footer__logo-link{
+    margin-bottom: 10px;
+}
+
+.footer__contact{
+    margin-bottom: 10px;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media(max-width: 940px) {
+    .welcome__text{
+        width: 352px
+    }
+
+    .welcome__title{
+        font-size: 45px;
+        width: 350px;
+    }
+
+    .cta__text{
+        font-size: 26px;
+    }
+
+    .mission__img{
+        right: 80%;
+    }
+}
+
+@media(max-width: 765px) {
+    .logo_air{
+        width: 180px;
+    }
+
+    .header_container{
+        justify-content: space-between;
+        gap:0;
+    }
+
+    .header{
+        margin-bottom: 30px;
+        padding: 10px 0;
+    }
+
+    .welcome__title{
+        font-size: 30px;
+        margin-bottom: 25px;
+        width: 300px;
+    }
+
+    .welcome__text{
+        padding-left: 0;
+        font-size: 16px;
+        width: 230px;
+    }
+
+    .welcome__row{
+        min-height: 420px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .welcome__text::before,.welcome__text::after {
+        display: none;
+    }
+
+    .welcome__img{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cta__img, .footer__cta .cta__img{
+        height: 60px;
+        width: 195px;
+    }
+
+    .sta__links, .footer__cta .sta__links{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .cta{
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .welcome__desc{
+        width: 300px;
+    }
+
+    .mission__img{
+        position: static;
+        transform: none;
+        width: 250px;
+        align-self: center;
+        padding: 20px 0;
+    }
+
+    .mission__title::after{
+        right: auto;
+        left: -24px;
+        top: -28px;
+    }
+
+    .mission__container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mission__desc{
+        margin-left: unset;
+        max-width: unset;
+    }
+
+    .mission__text{
+        width: none;
+    }
+
+    .mission__title{
+        margin-bottom: 25px;
+    }
+
+    .mission{
+        padding:0;
+    }
+
+    .common{
+        margin-top: 0;
+    }
+
+    .common__col, .mission__desc{
+        max-width: unset;
+    }
+
+    .common__text{
+        font-size: 16px;
+    }
+    .common__container, .common:nth-child(even) .container{
+        flex-direction: column-reverse;
+    }
+
+    .common__img{
+        align-self: center;
+        width: 280px;
+        padding: 35px 0 0;
+    }
+
+    .flot, .mar{
+        background: none;
+    }
+
+    .flot::before{
+        margin-bottom: -140px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0)56%, #000 84%), url("./img/fon1.jpg");
+    background-size: cover;
+    }
+
+    .mar::before{
+        margin-bottom: -140px;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0)56%, #000 84%), url("./img/fon4.jpg");
+    background-size: cover;
+    }
+
+    .footer__cta{
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    .footer__logo{
+        width: 120px;
+    }
+
+}
+
+@media(max-width: 500px){
+    .welcome__img{
+        position: relative;
+        left: -60px;
+        width: 250px;
+    }
+    
+
+    .cta{
+        gap: 20px;
+    }
+
+    .cta__text{
+        font-size: 22px;
+    }
+
+    .cta__img{
+        width: 160px;
+        height: 50px;
+    }
+
+    .mission{
+        padding: 0;
+    }
+
+    .mission__img{
+        width: 220px;
+    }
+
+    .footer__row{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .footer__contact{
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 360px){
+    .common__img{
+        width: 190px;
+    }
+
+    .mission__img{
+        width: 190px;
+    }
+}
